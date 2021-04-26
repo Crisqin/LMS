@@ -34,11 +34,11 @@ class SubjectsSeeder extends Seeder
 
         Subjects::factory(4)->has(Tasks::factory(4)->has(Solutions::factory(5)))->create();
 
-        $subjects=DB::table('Subjects')->where('user_id','=',null)->get()
-        ->each(function ($subject) use ($teacherUsers){
-            $subject->user_id=$teacherUsers->id;
-        } );
-        $subjects->update($subjects);
+        // $subjects=DB::table('Subjects')->where('user_id','=',null)->get()
+        // ->each(function ($subject) use ($teacherUsers){
+        //     $subject->user_id=$teacherUsers->id;
+        // } );
+        // $subjects->update($subjects);
 
     }
 }
