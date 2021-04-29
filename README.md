@@ -17,7 +17,9 @@ php artisan serve
 
 
 Test user_email and password:
+
 joe@gmail.com   qqqq  (as teacher)
+
 jim@gmail.com  qqqq    (as student) 
 
 
